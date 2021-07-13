@@ -1,0 +1,15 @@
+<!-- Declairs how we are going to create the project -->
+
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+<!-- The target framework declairs the net version -->
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+<!-- Adds some packages -->
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
