@@ -23,6 +23,7 @@ namespace Catalog.Controllers
             this.repository = repository;
         }
 
+
         // * ----- GETTING ALL THE ITEMS ----- *
         [HttpGet]
         public IEnumerable<ItemDto> GetItems()
@@ -30,6 +31,7 @@ namespace Catalog.Controllers
             var items = repository.GetItems().Select( item => item.AsDto());
             return items;
         }
+
 
         // * ----- GETTING ONE ITEM ----- *
         [HttpGet("{id}")]
@@ -44,6 +46,7 @@ namespace Catalog.Controllers
 
             return item.AsDto();
         }
+
 
         // * ----- POSTING AN ITEM ----- *
         [HttpPost]
